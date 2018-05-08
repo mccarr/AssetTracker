@@ -1,5 +1,5 @@
-#ifndef AssetTracker_h
-#define AssetTracker_h
+#ifndef AssetTracker_10HZ_h
+#define AssetTracker_10HZ_h
 
 #include "application.h"
 #include "math.h"
@@ -64,4 +64,4 @@ class AssetTracker {
 
 };
 
-#endif // AssetTracker_h
+#endif // AssetTracker_10HZ_h
