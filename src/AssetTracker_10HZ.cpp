@@ -1,4 +1,4 @@
-#include "AssetTracker.h"
+#include "AssetTracker_10HZ.h"
 #include "math.h"
 
 //----------------- Tracker ----------------//
@@ -119,7 +119,7 @@ void AssetTracker::gpsOn() {
     gps.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
     delay(500);
     // Default is 1 Hz update rate
-    gps.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);
+    gps.sendCommand(PMTK_SET_NMEA_UPDATE_10HZ); // Changed from 1HZ to 10HZ MCARR 2018-05-08
     delay(500);
     gps.sendCommand(PGCMD_NOANTENNA);
     delay(500);
